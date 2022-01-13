@@ -1,0 +1,6 @@
+1. write a program to use global variables in three functions.
+2. write a program to store a value in variable during declaration .
+3. write a program to store a value in variable after declaration .
+4. write a program to declare three variables without any value.
+5. write a program to call a same function atleast three time .
+
