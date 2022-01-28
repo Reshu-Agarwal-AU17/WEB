@@ -1,0 +1,55 @@
+.button {
+  padding: 15px;
+}
+#btn-default {
+  border: 1px grey solid;
+  padding: 15px;
+  font-size: 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+#btn-primary {
+  border: 1px blue solid;
+  padding: 15px;
+  font-size: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: blue;
+  color: white;
+}
+#btn-success {
+  border: 1px green solid;
+  padding: 15px;
+  font-size: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: green;
+  color: white;
+}
+#btn-info {
+  border: 1px skyblue solid;
+  padding: 15px;
+  font-size: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: skyblue;
+  color: white;
+}
+#btn-warning {
+  border: 1px orange solid;
+  padding: 15px;
+  font-size: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: orange;
+  color: white;
+}
+#btn-danger {
+  border: 1px red solid;
+  padding: 15px;
+  font-size: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+}
