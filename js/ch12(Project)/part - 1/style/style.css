@@ -1,0 +1,43 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+#page {
+  width: 80%;
+  height: 527px;
+  border-bottom: 30px groove red;
+  -webkit-box-shadow: 0px 0px 5px grey;
+  -o-box-shadow: 0px 0px 5px grey;
+  -moz-box-shadow: 0px 0px 5px grey;
+  box-shadow: 0px 0px 5px grey;
+  margin: 30px auto;
+}
+
+#brand-name {
+  width: 80%;
+  height: 180px;
+  margin: 0 auto;
+  border-top: 30px groove red;
+  margin-top: 20px;
+  -webkit-box-shadow: 0px 0px 5px grey;
+  -o-box-shadow: 0px 0px 5px grey;
+  -moz-box-shadow: 0px 0px 5px grey;
+  box-shadow: 0px 0px 5px grey;
+}
+#result {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 60px;
+}
+#pro-btn {
+  width: 180px;
+  height: 60px;
+  border: 0.5px solid #ccc;
+  background-color: white;
+  margin-top: 1.5px;
+  margin-left: 1.5px;
+}
