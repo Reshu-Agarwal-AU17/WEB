@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <script>
+      function play() {
+        var x = document.getElementById("video");
+        x.play();
+      }
+
+      function pause() {
+        var x = document.getElementById("video");
+        x.pause();
+      }
+
+      function vload() {
+        var x = document
+          .getElementById("upload")
+          .value.replace(/.*(\/|\\)/, "");
+
+        var y = document.getElementById("video");
+        y.src = x;
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1 align="center">WAP VIDEO PLAYER</h1>
+    </header>
+    <section>
+      <video src="" id="video"></video>
+    </section>
+    <footer>
+      <button>
+        <input type="file" id="upload" onchange="vload()" />Uplaod video
+      </button>
+      <button onclick="play()">Play Video</button>
+      <button onclick="pause()">Pause Video</button>
+    </footer>
+  </body>
+</html>
