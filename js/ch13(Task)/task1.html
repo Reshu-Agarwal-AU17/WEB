@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Name</title>
+    <script>
+      function join() {
+        var x = document.getElementById("firstname").value;
+        var y = document.getElementById("lastname").value;
+        document.write("Your name is: " + x + " " + y);
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1 align="center">Join Your Name !</h1>
+    <hr />
+    <form action="#">
+      <label for="firstname">Firstname</label>
+      <br />
+      <input type="text" name="firstname" id="firstname" />
+      <br /><br />
+      <label for="lastname">Lastname</label>
+      <br />
+      <input type="text" name="lastname" id="lastname" />
+      <br /><br />
+      <input type="submit" value="Join Name Now !" onclick="join()" />
+    </form>
+  </body>
+</html>
