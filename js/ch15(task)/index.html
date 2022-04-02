@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #range {
+        position: fixed;
+        bottom: 0;
+        left: 54%;
+      }
+      #fixed-box {
+        width: 250px;
+        height: 80px;
+        background: red;
+        position: fixed;
+        bottom: 0;
+        left: 51%;
+      }
+      #showtext {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="size">Wap Institute</h1>
+    <div id="fixed-box">
+      <p id="showtext"></p>
+      <input type="range" min="0" max="1000" id="range" oninput="demo()" />
+    </div>
+    <script>
+      function demo() {
+        var x = document.getElementById("range").value;
+        var y = document.getElementById("size");
+        y.style.fontSize = x + "px";
+        var z = document.getElementById("showtext");
+        z.innerHTML = "Your Font Size is now = " + x + "px";
+      }
+    </script>
+  </body>
+</html>
