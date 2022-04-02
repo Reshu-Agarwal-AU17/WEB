@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      div {
+        margin: 0 auto;
+        width: 600px;
+        border: 5px red solid;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Image Effect</h1>
+    <div id="page">
+      <img
+        src="./DSC_1773-removebg-preview.png"
+        alt="Boy Image"
+        width="600"
+        height="396"
+        id="pic"
+      />
+      <label for="brightness">Brightness</label>
+      <input
+        type="range"
+        min="0"
+        max="150"
+        id="brightness"
+        oninput="bright()"
+      />
+      <label for="contrast">Contrast</label>
+      <input type="range" min="0" max="400" id="contrast" oninput="contra()" />
+      <label for="saturation">Saturate</label>
+      <input
+        type="range"
+        min="0"
+        max="400"
+        id="saturation"
+        oninput="saturate()"
+      />
+    </div>
+
+    <script>
+      function bright() {
+        var x = document.getElementById("brightness").value;
+        var y = document.getElementById("pic");
+        y.style.WebkitFilter = "brightness(" + x + "%)";
+        y.style.filter = "brightness(" + x + "%)";
+      }
+
+      function contra() {
+        var x = document.getElementById("contrast").value;
+        var y = document.getElementById("pic");
+        y.style.WebkitFilter = "contrast(" + x + "%)";
+        y.style.filter = "contrast(" + x + "%)";
+      }
+
+      function saturate() {
+        var x = document.getElementById("saturation").value;
+        var y = document.getElementById("pic");
+        y.style.WebkitFilter = "saturate(" + x + "%)";
+        y.style.filter = "saturate(" + x + "%)";
+      }
+    </script>
+  </body>
+</html>
