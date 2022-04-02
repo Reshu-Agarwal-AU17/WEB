@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 720px;
+        height: 200px;
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <p id="demo"></p>
+    <button onclick="wap()">Click ME</button> -->
+
+    <form>
+      <input id="user" />
+      <button onclick="return update()">Update</button>
+    </form>
+    <div>
+      <p id="result"></p>
+    </div>
+    <script>
+      // var x = Boolean(2 < 2);
+      // document.getElementById("demo").innerHTML = x;
+      // function wap() {
+      //   var x = 10;
+      //   var y = 12;
+      //   var z = x + y;
+      //   window.alert("Your answer is " + z);
+      // }
+
+      function update() {
+        var a = document.getElementById("user").value;
+        var b = document.getElementById("result");
+        b.innerHTML = a;
+        return false;
+      }
+    </script>
+  </body>
+</html>
