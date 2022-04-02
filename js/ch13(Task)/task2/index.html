@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Address Maker</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <header>
+      <center>
+        <h1>Address Maker</h1>
+      </center>
+      <center>
+        <font size="4" face="calibri">An Online Address Creater Tool</font>
+      </center>
+    </header>
+    <section>
+      <div class="con_left">
+        <form name="wap" onsubmit="return main()">
+          <h1 class="form_header">
+            <center>Type Your Information Here</center>
+          </h1>
+          Name:
+          <br />
+          <input type="text" name="name" />
+          <br /><br />
+          Mobile No:
+          <br />
+          <input type="tel" name="mobile" />
+          <br /><br />
+          Alternate Mobile No:
+          <br />
+          <input type="tel" name="al_mobile" />
+          <br /><br />
+          S/O, W/O, H/O:
+          <br />
+          <input type="text" name="spouse" />
+          <br /><br />
+          Email:
+          <br />
+          <input type="email" name="email" id="" />
+          <br /><br />
+          Address:
+          <br />
+          <textarea name="address" id="" cols="60" rows="10"></textarea>
+          <br /><br />
+          <input type="submit" value="make" name="submit" />
+        </form>
+      </div>
+      <!-- container left close -->
+      <div class="con_right">
+        <div class="templete">
+          <div class="header">
+            <div id="header_left"></div>
+            <div id="header_right_one"></div>
+            <div id="header_right_two"></div>
+          </div>
+          <div class="prefix_con">
+            <div id="spouse"></div>
+            <div id="email"></div>
+            <pre id="address"></pre>
+          </div>
+        </div>
+        <center>
+          <button onclick="print()">Print</button>
+          <button onclick="formatting()">Bold</button>
+          <button onclick="font_style()">Italic</button>
+          <button onclick="undo()">Undo</button>
+        </center>
+      </div>
+    </section>
+  </body>
+</html>
