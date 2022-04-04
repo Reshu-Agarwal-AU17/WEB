@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      Username
+      <br />
+      <input type="text" name="username" id="user" />
+      <br />
+      <br />
+      <input type="submit" value="check in" onclick="wap()" />
+    </form>
+    <script>
+      function wap() {
+        var x = document.getElementById("user").value;
+        // x == "Rishav"
+        //   ? window.alert("User Found")
+        //   : window.alert("User Not Found!!");
+        var y = x == "Rishav" ? "User Found" : "User Not Found!!";
+        window.alert(y);
+      }
+    </script>
+  </body>
+</html>
