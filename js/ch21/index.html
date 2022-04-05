@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form onsubmit="return login()">
+      <label for="username">UserName</label>
+      <br />
+
+      <input type="text" name="username" id="uname" />
+      <br /><br />
+
+      <label for="password">Password</label>
+      <br />
+      <input type="password" name="password" id="pwd" />
+      <br /><br />
+      <input type="submit" value="Login" />
+    </form>
+    <h1 id="result"></h1>
+    <script>
+      function login() {
+        let user = document.getElementById("uname").value;
+        let pass = document.getElementById("pwd").value;
+        let check =
+          user == "Rishav" && pass == 1234 ? "Login Success" : "Login Failed";
+        document.getElementById("result").innerHTML = check;
+        return false;
+      }
+    </script>
+  </body>
+</html>
